@@ -1,0 +1,9 @@
+#[build]
+#target = "armv7-unknown-linux-gnueabihf"
+
+[target.armv7-unknown-linux-gnueabihf]
+ar = "arm-linux-gnueabihf-ar"
+linker = "arm-linux-gnueabihf-gcc"
+
+[unstable]
+build-std = ["std", "core", "alloc"]
